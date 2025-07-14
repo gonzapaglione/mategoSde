@@ -134,9 +134,30 @@
 
     </footer>
 
-    <div class="cart">
+    <div class="cart" id="cart-button">
         <i class="fa-solid fa-cart-shopping"></i>
     </div>
+
+    <div class="dinamic-cart">
+        <div class="cart-wrapper">
+            <div class="cart-header">
+                <h3>Mi carrito</h3>
+                <button class="btn-close-cart"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="cart-items">
+                <!-- Items will be dynamically added here -->
+            </div>
+
+            <div class="cart-footer">
+                <p>Total: <span id="total-price">$0.00</span></p>
+                <button class="btn-checkout" id="cleancart">Limpiar carrito</button>
+                <button class="btn-checkout" id="buy">Finalizar compra</button>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="../js/script.js"></script>
 
 </html>

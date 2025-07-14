@@ -122,7 +122,7 @@ footer>* {
 }
 
 .aboutus {
-    padding: rem 0;
+    padding: 1rem 0;
 
     h2 {
         text-align: center;
@@ -244,4 +244,57 @@ footer>* {
 
 .cart i {
     font-size: 2rem;
+}
+
+.dinamic-cart {
+    display: none;
+    position: fixed;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 80%;
+
+    .cart-wrapper {
+        padding: 15px;
+
+        .cart-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .cart-items {
+            background-color: #333;
+        }
+
+        .cart-footer {
+            display: flex;
+            justify-content: space-between;
+            font-family: poppins, sans-serif;
+
+            .btn-checkout {
+                background-color: rgb(122, 122, 122);
+                color: white;
+
+            }
+        }
+    }
+}
+
+.dinamic-cart.active {
+    display: block;
+}
+
+.btn-close-cart {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
 }
