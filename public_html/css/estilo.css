@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../plugins/poppins/Poppins-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #678135;
+    padding: 20px;
+    display: flex;
+    /* Añadido */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Espacia logo y nav */
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #b8e95d;
+    transition: color 0.3s ease;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: rgb(103, 129, 53);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    margin-right: 30px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer .minIcon {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+footer>* {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.minIcons {
+    color: white;
+}
+
+.img_Prod {
+    width: 20%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aboutus {
+    padding: 3rem 0;
+    background-color: #f8fafc;
+
+    h2 {
+        text-align: center;
+        font-size: clamp(3.8rem, 8vw, 4.6rem);
+        color: #404040;
+        margin-bottom: 5rem;
+    }
+
+    p {
+        font
+    }
+}
+
+.products {
+    padding: 8rem 0;
+    background-color: #f8fafc;
+
+    h2 {
+        text-align: center;
+        font-size: clamp(3.8rem, 8vw, 4.6rem);
+        color: #404040;
+        margin-bottom: 5rem;
+    }
+
+    .products-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+
+        @media (min-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: 1280px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.product {
+    box-shadow: 0 0 2.5rem rgb(0, 0, 0, .10);
+
+    img {
+        border-top-left-radius: .7rem;
+        border-top-right-radius: .7rem;
+    }
+}
+
+.product-info {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: .7rem;
+
+    h4 {
+        color: #404040;
+    }
+
+    .product-text {
+        margin: 1.2rem 0;
+    }
+
+    .price {
+        margin: 1.2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        span {
+            text-decoration: line-through;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: #526829;
+        width: 100%;
+        padding: 1rem;
+        border-radius: .5rem;
+        color: #ffffff;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 1.2rem;
+        cursor: pointer;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: #98c04e;
+        }
+    }
+}
