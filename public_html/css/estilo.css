@@ -122,9 +122,6 @@ footer>* {
         margin-bottom: 5rem;
     }
 
-    p {
-        font
-    }
 }
 
 .products {
@@ -212,4 +209,104 @@ footer>* {
             background-color: #98c04e;
         }
     }
+}
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+header {
+    background-color: #678135;
+    padding: 20px;
+    display: flex;
+    /* Añadido */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Espacia logo y nav */
+}
+
+nav {
+    margin-right: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+nav a:hover {
+    color: #3b4b1e;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    height: 2000px;
+    margin: 0 auto;
+    border: solid 1px black;
+}
+
+footer {
+    background-color: #678135;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    margin-right: 30px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer .minIcon {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px 0 0;
+    vertical-align: middle;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+}
+
+footer > * {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.minIcons{
+    color: white;
 }
